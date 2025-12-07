@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: "https://arifkhanpk.github.io",
-  baseUrl: "/",
+  baseUrl: "/arifkhanpk/physical_ai_humanoid_robotics_book",
   organizationName: 'arifkhanpk',
   projectName: 'Physical_AI_Humanoid_Robotics_Book',
   deploymentBranch: 'gh-pages',
