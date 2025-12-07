@@ -116,4 +116,5 @@ For questions, issues, or suggestions, please open an issue on GitHub.
 
 ---
 
-**Course Website**: [https://yo-its-anas.github.io/Physical_AI_Humanoid_Robotics_Book/](https://yo-its-anas.github.io/Physical_AI_Humanoid_Robotics_Book/)
+**Course Website**: [https://github.com/arifkhanpk/Physical_AI_Humanoid_Robotics_Book/](https://github.com/arifkhanpk/Physical_AI_Humanoid_Robotics_Book/)
+"# physical_ai_humanoid_robotics_book" 
