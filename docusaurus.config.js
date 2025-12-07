@@ -1,5 +1,4 @@
 // @ts-check
-// Note: type annotations allow type checking and IDE autocompletion
 
 const {themes} = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
@@ -7,39 +6,33 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  // Site Metadata
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'A Comprehensive Textbook for Teaching Embodied Intelligence',
   favicon: 'img/favicon.ico',
 
-  // Deployment
-  url: 'https://yo-its-anas.github.io',
-  baseUrl: '/Physical_AI_Humanoid_Robotics_Book/',
-  organizationName: 'yo-its-anas',
+  url: "https://arifkhanpk.github.io",
+  baseUrl: "/physical_ai_humanoid_robotics_book/",
+  organizationName: 'arifkhanpk',
   projectName: 'Physical_AI_Humanoid_Robotics_Book',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  // Build Configuration
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
-  // Presets
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book/tree/001-ai-robotics-textbook/',
+          editUrl: 'https://github.com/arifkhanpk/Physical_AI_Humanoid_Robotics_Book/edit/main/',
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
         },
@@ -51,104 +44,71 @@ const config = {
     ],
   ],
 
-  // Theme Configuration
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Navbar
-      navbar: {
-        title: 'Physical AI & Humanoid Robotics',
-        logo: {
-          alt: 'Robotics Logo',
-          src: 'img/logo.svg',
+  themeConfig: ({
+    navbar: {
+      title: 'Physical AI & Humanoid Robotics',
+      logo: {
+        alt: 'Robotics Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Textbook',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Textbook',
-          },
-          {
-            href: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
+        {
+          href: 'https://github.com/arifkhanpk',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
 
-      // Footer
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Content',
-            items: [
-              {
-                label: 'Preface',
-                to: '/preface',
-              },
-              {
-                label: 'Part I: Foundations',
-                to: '/physical-ai',
-              },
-              {
-                label: 'Appendices',
-                to: '/appendix',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'ROS 2 Documentation',
-                href: 'https://docs.ros.org/',
-              },
-              {
-                label: 'NVIDIA Isaac Sim',
-                href: 'https://docs.omniverse.nvidia.com/isaacsim/',
-              },
-              {
-                label: 'Gazebo',
-                href: 'https://gazebosim.org/',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/yo-its-anas/Physical_AI_Humanoid_Robotics_Book',
-              },
-              {
-                label: 'Created with Claude Code',
-                href: 'https://claude.com/claude-code',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Course. Built with Docusaurus.`,
-      },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Content',
+          items: [
+            { label: 'Preface', to: '/preface' },
+            { label: 'Part I: Foundations', to: '/physical-ai' },
+            { label: 'Appendices', to: '/appendix' },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            { label: 'ROS 2 Documentation', href: 'https://docs.ros.org/' },
+            { label: 'NVIDIA Isaac Sim', href: 'https://docs.omniverse.nvidia.com/isaacsim/' },
+            { label: 'Gazebo', href: 'https://gazebosim.org/' },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            { label: 'GitHub', href: 'https://github.com/arifkhanpk' },
+            { label: 'Created with Claude Code', href: 'https://claude.com/claude-code' },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Course. Built with Docusaurus.`,
+    },
 
-      // Syntax Highlighting
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['python', 'bash', 'yaml', 'json', 'cpp', 'markup'],
-      },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+      additionalLanguages: ['python', 'bash', 'yaml', 'json', 'cpp', 'markup'],
+    },
 
-      // Table of Contents
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 4,
-      },
-    }),
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
+  }),
 
-  // Plugins
   plugins: [
-    // Local search plugin (alternative to Algolia)
     [
       require.resolve('@cmfcmf/docusaurus-search-local'),
       {
@@ -159,7 +119,6 @@ const config = {
     ],
   ],
 
-  // Markdown Configuration
   markdown: {
     mermaid: true,
   },
